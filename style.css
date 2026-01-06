@@ -1,0 +1,56 @@
+body{
+    border: 4px solid red;
+    display: flex;
+    flex-direction: column;
+}
+
+/*----------------------------------------------------ONE----------------------------------------------------*/
+.one{
+    border: 10px solid green;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 0 150px 50px;
+
+}
+/*---------------start-ROW1---------------*/  /*HEADER LOGO + HEADER LINKS*/
+.one .row1{
+    border: 10px solid pink;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.one .row1 .logo{
+    border: 1px solid yellow;
+}
+.one .row1 .links{
+    border: 1px solid gray;
+}
+.one .row1 .links ul{
+    border: 1px solid black;
+    padding: 0;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    gap: 10px;
+}
+/*---------------end-ROW1---------------*/
+
+/*---------------start-ROW2---------------*/  /*TEXT + IMG*/
+.one .row2{
+    border: 10px solid blue;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.one .row2 .text, .one .row2 .img{
+    border: 10px solid yellow;
+}
+.one .row2 .img img{
+    border: 2px solid red;
+    width: 400px;
+}
+/*---------------end-ROW2---------------*/
+/*----------------------------------------------------ONE----------------------------------------------------*/
