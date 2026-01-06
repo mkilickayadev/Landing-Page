@@ -4,7 +4,7 @@ body{
     flex-direction: column;
 }
 
-/*----------------------------------------------------ONE----------------------------------------------------*/
+/*------------------ONE------------------ONE------------------ONE------------------ONE------------------ONE------------------*/
 .one{
     border: 10px solid green;
     display: flex;
@@ -53,4 +53,53 @@ body{
     width: 400px;
 }
 /*---------------end-ROW2---------------*/
-/*----------------------------------------------------ONE----------------------------------------------------*/
+/*------------------ONE------------------ONE------------------ONE------------------ONE------------------ONE------------------*/
+
+/*------------------TWO------------------TWO------------------TWO------------------TWO------------------TWO------------------*/
+.two{
+    border: 10px solid blueviolet;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+/*---------------start-TITLE---------------*/  /*TITLE*/
+.title{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    text-align: center;
+}
+/*---------------end-TITLE---------------*/
+
+/*---------------start-IMAGES---------------*/  /*IMAGES*/
+.images{
+    border: 10px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    gap: 100px;
+}
+
+.two .images .image{
+    border: 10px solid red;
+    display: flex; 
+    flex-direction: column; 
+    width: 300px;
+    gap: 15px;
+}
+
+.two .images .image img{
+    border: 5px solid yellow;
+    height: 300px;
+}
+
+.two .images .image p{
+    border: 5px solid green;
+    text-align: center;    
+}
+/*---------------end-IMAGES---------------*/
+
+/*------------------TWO------------------TWO------------------TWO------------------TWO------------------TWO------------------*/
