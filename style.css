@@ -103,3 +103,28 @@ body{
 /*---------------end-IMAGES---------------*/
 
 /*------------------TWO------------------TWO------------------TWO------------------TWO------------------TWO------------------*/
+
+/*------------------THREE------------------THREE------------------THREE------------------THREE------------------THREE------------------*/
+.three{
+    border: 10px solid green;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    padding: 150px 500px;
+    gap: 10px;
+}
+/*---------------start-QUOTATION---------------*/  /*QUATATION*/
+.three .quatation{
+    border: 1px solid black;
+}
+/*---------------end-QUOTATION---------------*/
+
+/*---------------start-AUTHOR---------------*/  /*AUTHOR*/
+.three .author{
+    border: 1px solid black;
+    align-self: flex-end;
+}
+/*---------------end-AUTHOR---------------*/ 
+
+/*------------------THREE------------------THREE------------------THREE------------------THREE------------------THREE------------------*/
