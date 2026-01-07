@@ -1,34 +1,36 @@
 body{
-    border: 4px solid red;
     display: flex;
     flex-direction: column;
 }
 
 /*------------------ONE------------------ONE------------------ONE------------------ONE------------------ONE------------------*/
 .one{
-    border: 10px solid green;
     display: flex;
     flex-direction: column;
     gap: 50px;
     padding: 0 150px 50px;
-
+    /*STYLIZE*/
+    font-family: Roboto, 'Times New Romans';
+    background-color: #1F2937;
+    /*STYLIZE*/
 }
+
 /*---------------start-ROW1---------------*/  /*HEADER LOGO + HEADER LINKS*/
 .one .row1{
-    border: 10px solid pink;
     display:flex;
     flex-direction: row;
     justify-content: space-between;
 
 }
 .one .row1 .logo{
-    border: 1px solid yellow;
+    font-size: 24px;
+    color: #F9FAF8;
 }
 .one .row1 .links{
-    border: 1px solid gray;
+    font-size: 18px;
+    color: #E5E7EB;
 }
 .one .row1 .links ul{
-    border: 1px solid black;
     padding: 0;
     display:flex;
     flex-direction: row;
@@ -40,24 +42,56 @@ body{
 
 /*---------------start-ROW2---------------*/  /*TEXT + IMG*/
 .one .row2{
-    border: 10px solid blue;
     display:flex;
     flex-direction: row;
     justify-content: space-between;
 }
-.one .row2 .text, .one .row2 .img{
-    border: 10px solid yellow;
+
+.one .row2 .text{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
+.one .row2 .text .big-text{
+    /*STYLIZE*/
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
+    /*STYLIZE*/
+}
+
+.one .row2 .text .small-text{
+    /*STYLIZE*/
+    font-size: 18px;
+    color: #E5E7EB; 
+    /*STYLIZE*/
+}
+
+.one .row2 .text .button-one{
+    /*STYLIZE*/
+    /*padding: 5px 10px;*/
+    /*STYLIZE*/
+}
+
+.one .row2 .text .button-one button{
+    /*STYLIZE*/
+    background-color: #3882f6;
+    font-weight: 800;
+    padding: 0 25px;
+    border-radius: 5px;
+    color: white;
+    /*STYLIZE*/
+    border: 1px solid white;
+}
+
 .one .row2 .img img{
-    border: 2px solid red;
-    width: 400px;
+    width: 300px;
 }
 /*---------------end-ROW2---------------*/
 /*------------------ONE------------------ONE------------------ONE------------------ONE------------------ONE------------------*/
 
 /*------------------TWO------------------TWO------------------TWO------------------TWO------------------TWO------------------*/
 .two{
-    border: 10px solid blueviolet;
     display: flex; 
     flex-direction: column;
     justify-content: center;
@@ -65,17 +99,21 @@ body{
 }
 /*---------------start-TITLE---------------*/  /*TITLE*/
 .title{
-    border: 1px solid black;
     display: flex;
     flex-direction: column;
     justify-content: center; 
     text-align: center;
+    /*STYLIZE*/
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
+    /*STYLIZE*/
+
 }
 /*---------------end-TITLE---------------*/
 
 /*---------------start-IMAGES---------------*/  /*IMAGES*/
 .images{
-    border: 10px solid black;
     display: flex;
     flex-direction: row;
     justify-content:center;
@@ -84,20 +122,20 @@ body{
 }
 
 .two .images .image{
-    border: 10px solid red;
     display: flex; 
     flex-direction: column; 
     width: 300px;
     gap: 15px;
+    flex-shrink: 0;
 }
 
 .two .images .image img{
-    border: 5px solid yellow;
+    border: 1px solid grey;
     height: 300px;
+    border-radius: 10px;
 }
 
 .two .images .image p{
-    border: 5px solid green;
     text-align: center;    
 }
 /*---------------end-IMAGES---------------*/
@@ -106,24 +144,37 @@ body{
 
 /*------------------THREE------------------THREE------------------THREE------------------THREE------------------THREE------------------*/
 .three{
-    border: 10px solid green;
     display: flex;
     flex-direction: column;
     justify-content:center;
-    align-items: center;
-    padding: 150px 500px;
+    align-items: flex-end;
+    padding: 100px 400px;
     gap: 10px;
+    /*STYLIZE*/
+    background-color: #E5E7EB;
+    /*STYLIZE*/
+
 }
 /*---------------start-QUOTATION---------------*/  /*QUATATION*/
 .three .quatation{
-    border: 1px solid black;
+    /*STYLIZE*/
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 300;
+    min-width: 500px;
+    max-width: 750px;
+    text-align: left;
+    padding: 30px 100px;
+    /*STYLIZE*/
 }
 /*---------------end-QUOTATION---------------*/
 
 /*---------------start-AUTHOR---------------*/  /*AUTHOR*/
 .three .author{
-    border: 1px solid black;
-    align-self: flex-end;
+    /*STYLIZE*/
+    font-weight: 800;
+    min-width: 200px;
+    /*STYLIZE*/
 }
 /*---------------end-AUTHOR---------------*/ 
 
@@ -131,54 +182,71 @@ body{
 
 /*------------------FOUR------------------FOUR------------------FOUR------------------FOUR------------------FOUR------------------*/
 .four{
-    border: 10px solid purple;
     display: flex; 
     flex-direction: column; 
     justify-content: center; 
-    align-items: center; 
-    /*padding: 50px 100px;*/
+    align-items: stretch; 
+    padding: 75px 250px;
 }
 /*---------------start-ONLY---------------*/  /*ONLY*/
 .four .only{
-    border: 1px solid black;
     display: flex; 
-    flex-direction: row; 
+    flex-direction: row;
     justify-content: space-between; 
     align-items: center; 
-    /*padding: 25px 50px;*/
+    /*STYLIZE*/
+    background-color: #3882F6;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 100px;
+    min-width: 600px;
+    /*STYLIZE*/
+
 }
-.only .four .texts{
-    border: 1px solid black;
+.four .only .texts{
     display: flex; 
+    flex-shrink: 0;
     flex-direction: column; 
     justify-content: center; 
     align-items: flex-start; 
-    gap: 5px;
 }
-.text1, .text2{
-    border: 1px solid black;
-    padding: 0;
+
+.four .only .text1{
+    /*STYLIZE*/
+    font-size: 18px;
+    font-weight: 700;
+    /*STYLIZE*/
 }
+
+.four .only .button-two{
+    flex-shrink: 0;
+}
+
+.four .only .button-two button{
+    /*STYLIZE*/
+    background-color: #3882f6;
+    color: white;
+    font-weight: 800;
+    padding: 15px 25px;
+    border-radius: 5px;
+    border: 1px solid white;
+    /*STYLIZE*/
+}
+
 /*---------------end-ONLY---------------*/
 /*------------------FOUR------------------FOUR------------------FOUR------------------FOUR------------------FOUR------------------*/
 
 /*------------------FOOTER------------------FOOTER------------------FOOTER------------------FOOTER------------------FOOTER------------------*/
 .footer{
-    border: 1px solid black;
     display: flex; 
     flex-direction: column; 
     align-items: stretch; 
     flex-shrink:0;
 }
 .footer .only{
-    border: 1px solid black;
     display: flex;
     flex-direction: column; 
     justify-content: center; 
     align-items: center;
-}
-
-.footer .only p{
-        border: 1px solid black;
 }
 /*------------------FOOTER------------------FOOTER------------------FOOTER------------------FOOTER------------------FOOTER------------------*/
